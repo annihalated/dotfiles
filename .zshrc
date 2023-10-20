@@ -1,6 +1,7 @@
 PS1="%1~ %# "
 
 setopt autocd  
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Aliases
 alias ls="ls -F"
