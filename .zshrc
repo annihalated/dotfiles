@@ -43,8 +43,6 @@ alias .z="vim ~/.dotfiles/.zshrc"
 alias .v="vim ~/.dotfiles/.vimrc"
 alias .g="vim ~/.dotfiles/.gitconfig"
 alias invoice="$PROJECTS_DIR/invoice/generate_invoice.sh"
-alias nyt="curl -s https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml | xmllint --xpath '//channel/item/title/text()|//channel/item/link/text()' | sed 's/^/- /'"
-
 # Git aliases
 alias gs='git status '
 alias ga='git add '

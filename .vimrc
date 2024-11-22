@@ -4,7 +4,10 @@ call plug#begin()
   Plug 'junegunn/goyo.vim'
   Plug 'lervag/vimtex'
   Plug 'ActivityWatch/aw-watcher-vim'
+  Plug 'tpope/vim-surround'
 call plug#end()
+
+set mouse=a
 let mapleader = ","
 set clipboard=unnamed
 
@@ -85,3 +88,9 @@ nmap <leader>n :noh<cr>
 nmap <leader>e :FZF<cr>
 nmap j gj
 nmap k gk
+
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'
